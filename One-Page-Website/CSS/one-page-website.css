@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+/*Both Fonts are imported from google fonts*/
+
+
+/*Nav-bar*/
+.nav-bar{
+    position: sticky; 
+    top: 0; /*Tells browser to stick element at top of the page*/
+    z-index: 9; /* Highest Stack layer*/
+}
+ul{
+    display: flex; /*Creates a flex container to expanmd or shrink elements*/
+    list-style-type: none;
+    align-items: center;
+    margin: -8px -8px 0px -8px; /* Top, right, bottom, and left*/
+    background-color: rgb(9, 55, 77);
+    border-bottom: 5px solid rgb(224, 247, 144);
+}
+
+a{
+    display: block; /* Displays items on the drop down vertically 
+    instead of horiztonally*/
+    font-family: 'Josefin Slab', serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(228, 233, 236);
+    text-align: center;
+    width: 100px;
+    padding: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in;
+}
+
+a:hover, .drop:hover a:only-of-type{
+    background-color: rgb(81, 67, 201);
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s ease-in;
+}
+
+.rollover-menu{
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.drop:hover .rollover-menu{
+    display: block;
+}
+
+/*Header Styling*/
+p{
+    font-family: 'Play', serif;
+    font-size: 20px;
+}
+
+h4{
+    font-family: "Charm", cursive;
+    font-size: 50px;
+}
+
+/*Contact form*/
+form{
+    display: table;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form input{
+    font-family: 'Play', serif;
+    font-size: 15px;
+    color: rgb(57, 64, 128);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 3px;
+    margin: 10px 15px 10px 0px;
+    transition: 0.3s ease-out;
+}
+
+textarea{
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: both;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-family: 'Play', serif;
+    color: rgb(57, 64, 128);
+    font-size: 15px;
+    transition: 0.3s ease-out;
+}
